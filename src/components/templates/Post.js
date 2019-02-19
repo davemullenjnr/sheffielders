@@ -129,6 +129,7 @@ const SiteLink = styled.a`
 `
 
 const HeroImage = styled(Img)`
+  background-color: ${variables.white};
   margin: 0 auto;
   margin-bottom: ${variables.spacer * 4}rem;
   width: 80px;
