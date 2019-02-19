@@ -132,6 +132,7 @@ const ImageContainer = styled.div`
   max-width: 80px;
   margin: 0 auto;
   margin-bottom: ${variables.spacer * 4}rem;
+  border-radius: 50%;
 
   @media ${variables.sm} {
     max-width: 120px;
