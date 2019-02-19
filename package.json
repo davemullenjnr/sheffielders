@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "sheffielders",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A collective of businesses, creatives, and projects, with (at least) one commonality — We're all Sheffielders.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dave Mullen Jnr <hello@davemullenjnr.co.uk>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.0.115",
@@ -28,7 +28,7 @@
     "styled-system": "^3.2.1"
   },
   "keywords": [
-    "gatsby"
+    "sheffielders"
   ],
   "license": "MIT",
   "scripts": {
