@@ -128,27 +128,22 @@ const SiteLink = styled.a`
   }
 `
 
-const ImageContainer = styled.div`
-  max-width: 80px;
+const HeroImage = styled(Img)`
   margin: 0 auto;
   margin-bottom: ${variables.spacer * 4}rem;
-  border-radius: 50%;
-
-  @media ${variables.sm} {
-    max-width: 120px;
-  }
-
-  @media ${variables.md} {
-    max-width: 160px;
-  }
-`
-
-const HeroImage = styled(Img)`
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: ${variables.spacer / 4}rem solid ${variables.white};
 
+  @media ${variables.sm} {
+    width: 120px;
+    height: 120px;
+  }
+
   @media ${variables.md} {
-    max-width: 160px;
+    width: 160px;
+    height: 160px;
     border: ${variables.spacer / 2}rem solid ${variables.white};
   }
 `
@@ -164,9 +159,7 @@ export default class Post extends Component {
           <Header logofill={variables.white} menufill={variables.white} />
           <Main>
             <Profile>
-              <ImageContainer>
-                <HeroImage fluid={markdownRemark.frontmatter.hero.childImageSharp.fluid} />
-              </ImageContainer>
+              <HeroImage fluid={markdownRemark.frontmatter.hero.childImageSharp.fluid} />
               <Category>{markdownRemark.frontmatter.category}</Category>
               <Title>{markdownRemark.frontmatter.title}</Title>
               <Decription dangerouslySetInnerHTML={{ __html: markdownRemark.html}} />
@@ -196,8 +189,8 @@ export const query = graphql`
         slug
         hero {
           childImageSharp {
-            fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 160) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
