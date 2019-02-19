@@ -159,7 +159,7 @@ export default class Post extends Component {
           <Header logofill={variables.white} menufill={variables.white} />
           <Main>
             <Profile>
-              <HeroImage fluid={markdownRemark.frontmatter.hero.childImageSharp.fluid} />
+              <HeroImage fluid={markdownRemark.frontmatter.hero.childImageSharp.fluid} fadeIn={false}/>
               <Category>{markdownRemark.frontmatter.category}</Category>
               <Title>{markdownRemark.frontmatter.title}</Title>
               <Decription dangerouslySetInnerHTML={{ __html: markdownRemark.html}} />
