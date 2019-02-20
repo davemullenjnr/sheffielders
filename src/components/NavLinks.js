@@ -18,6 +18,7 @@ const CategoryBlock = styled.section`
   margin-bottom: ${variables.spacer * 4}rem;
 `
 const CategoryTitle = styled.p`
+  font-size: ${typography.f6};
   color: ${variables.pink};
   text-transform: uppercase;
 `

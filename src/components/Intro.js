@@ -46,6 +46,7 @@ const Box = styled.div`
 `
 
 const SubHeading = styled.p`
+  font-size: ${typography.f6};
   text-transform: uppercase;
   margin-bottom: ${variables.spacer}rem;
 
