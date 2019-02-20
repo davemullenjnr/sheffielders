@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sheffielders`,
-    description: `A collective of businesses, freelancers, and projects, with (at least) one commonality — We're all Sheffielders.`,
+    description: `A collective of businesses, creatives, and projects, with (at least) one commonality — We're all Sheffielders.`,
     author: `@davemullenjnr`,
   },
   plugins: [

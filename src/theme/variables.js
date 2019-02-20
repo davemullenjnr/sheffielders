@@ -9,4 +9,4 @@ export const lg = `(min-width: 80rem)`;
 // colours
 export const black = '#1B1B1B';
 export const white = '#FFFFFF';
-export const pink = '#FFD0D2';
+export const pink = '#FFC2C2';
