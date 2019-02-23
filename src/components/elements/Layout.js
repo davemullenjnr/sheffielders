@@ -32,14 +32,17 @@ export const Main = styled.main`
 export const BackgroundPink = styled.div`
   background-color: ${variables.pink};
   background-image: url(${blackTexture});
+  background-size: 300px 300px;
 `
 export const BackgroundWhite = styled.div`
   background-color: ${variables.white};
   background-image: url(${blackTexture});
+  background-size: 300px 300px;
 `
 export const BackgroundBlack = styled.div`
   background-color: ${variables.black};
   background-image: url(${whiteTexture});
+  background-size: 300px 300px;
 `
 export const BackgroundUnite = styled.div`
   background-image: url(${unite});
