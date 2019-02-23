@@ -89,8 +89,7 @@ const Intro = () => {
           <Box>
             <MainHeading>
               A <CollectiveLink to="/collective/">collective</CollectiveLink> of
-              businesses, creatives, and projects, with (at least) one
-              commonality — We're all Sheffielders.
+              businesses, projects and creatives who have one thing in common — we're all Sheffielders!
             </MainHeading>
           </Box>
         </Flex>

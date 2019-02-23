@@ -1,7 +1,7 @@
 {
   "name": "sheffielders",
   "private": true,
-  "description": "A collective of businesses, creatives, and projects, with (at least) one commonality — We're all Sheffielders.",
+  "description": "A collective of businesses, projects and creatives who have one thing in common — we're all Sheffielders!",
   "version": "0.1.0",
   "author": "Dave Mullen Jnr <hello@davemullenjnr.co.uk>",
   "dependencies": {
