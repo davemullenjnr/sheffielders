@@ -29,21 +29,12 @@ export const Main = styled.main`
 `
 
 // backgrounds
-export const BackgroundPink = styled.div`
-  background-color: ${variables.pink};
-  background-image: url(${blackTexture});
+export const Background = styled.div`
+  background-color: ${props => props.pink ? `${variables.pink}` : props.black ? `${variables.black}` : `${variables.white}`};
+  background-image: url(${props => props.black ? `${whiteTexture}` : `${blackTexture}`});
   background-size: 300px 300px;
 `
-export const BackgroundWhite = styled.div`
-  background-color: ${variables.white};
-  background-image: url(${blackTexture});
-  background-size: 300px 300px;
-`
-export const BackgroundBlack = styled.div`
-  background-color: ${variables.black};
-  background-image: url(${whiteTexture});
-  background-size: 300px 300px;
-`
+
 export const BackgroundUnite = styled.div`
   background-image: url(${unite});
   background-repeat: no-repeat;

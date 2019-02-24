@@ -7,18 +7,18 @@ import './../../theme/base.css'
 import Head from '../core/Head'
 import Header from '../core/Header'
 import Footer from '../core/Footer'
-import { BackgroundWhite, Scafolding, Main } from '../elements/Layout';
+import { Background, Scafolding, Main } from '../elements/Layout';
 
 // render
 const Default = ({ children }) => (
-  <BackgroundWhite>
+  <Background>
       <Scafolding>
         <Head />
         <Header />
         <Main>{children}</Main>
         <Footer />
       </Scafolding>
-  </BackgroundWhite>
+  </Background>
 )
 
 Default.propTypes = {

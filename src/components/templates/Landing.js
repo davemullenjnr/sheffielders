@@ -7,11 +7,11 @@ import './../../theme/base.css'
 import Head from '../core/Head'
 import Header from '../core/Header'
 import Footer from '../core/Footer'
-import { BackgroundUnite, BackgroundPink, Scafolding, Main } from '../elements/Layout';
+import { BackgroundUnite, Background, Scafolding, Main } from '../elements/Layout';
 
 // render
 const Landing = ({ children }) => (
-  <BackgroundPink>
+  <Background pink>
     <BackgroundUnite />
       <Scafolding>
         <Head />
@@ -19,7 +19,7 @@ const Landing = ({ children }) => (
         <Main center>{children}</Main>
         <Footer />
       </Scafolding>
-  </BackgroundPink>
+  </Background>
 )
 
 Landing.propTypes = {

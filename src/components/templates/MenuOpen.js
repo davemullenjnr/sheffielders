@@ -6,18 +6,18 @@ import './../../theme/base.css'
 // components
 import Head from '../core/Head'
 import HeaderMenu from '../core/HeaderMenu'
-import { Scafolding, Main, BackgroundBlack } from '../elements/Layout'
+import { Scafolding, Main, Background } from '../elements/Layout'
 import { variables } from '../../theme'
 
 // render
 const MenuOpen = ({ children }) => (
-  <BackgroundBlack>
+  <Background black>
     <Scafolding>
       <Head />
       <HeaderMenu logofill={variables.white} />
       <Main center>{children}</Main>
     </Scafolding>
-  </BackgroundBlack>
+  </Background>
 )
 
 MenuOpen.propTypes = {

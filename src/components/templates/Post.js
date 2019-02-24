@@ -8,7 +8,7 @@ import SEO from '../core/Seo'
 import Head from '../core/Head'
 import Header from '../core/Header'
 import Footer from '../core/Footer'
-import { Scafolding, Main, BackgroundBlack } from '../elements/Layout'
+import { Scafolding, Main, Background } from '../elements/Layout'
 import { variables, typography } from '../../theme'
 
 // theme
@@ -153,7 +153,7 @@ export default class Post extends Component {
   render() {
     const { markdownRemark } = this.props.data
     return (
-      <BackgroundBlack>
+      <Background black>
         <Scafolding>
           <Head />
           <SEO title={markdownRemark.frontmatter.title} keywords={[`${markdownRemark.frontmatter.title}`]} />
@@ -173,7 +173,7 @@ export default class Post extends Component {
             <Footer />
           </ThemeProvider>
         </Scafolding>
-      </BackgroundBlack>
+      </Background>
     )
   }
 }
