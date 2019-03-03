@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/hoodiehut/"
+  to = "/collective/hoodiehut/"
+  status = 301
+  force = true
