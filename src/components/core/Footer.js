@@ -39,7 +39,7 @@ export default class Footer extends Component {
           <Credit>
             Curated by <a href="https://davemullenjnr.co.uk">Dave Mullen Jnr</a>
             <br />
-            hello@davemullenjnr.co.uk
+            hello@sheffielders.org
           </Credit>
           <Year>© {new Date().getFullYear()}</Year>
         </Flex>

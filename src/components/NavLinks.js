@@ -26,6 +26,7 @@ const NavLink = styled(Link)`
   color: ${variables.white};
   font-family: ${typography.fontSerif};
   font-size: ${typography.f4};
+  font-weight: bold;
   text-decoration: none;
 
   &:hover {
