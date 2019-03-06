@@ -12,7 +12,8 @@
 }
 
 .redesigned-theme-2018 input.radio:checked+label.choice:before, .redesigned-theme-2018 input.radio:not(:checked)+label.choice:before {
-  background-color: #fff !important;
+  background-color: #fff;
+  border-color: #fff !important;
 }
 
 .redesigned-theme-2018 .wufoo textarea.textarea {
