@@ -4,13 +4,37 @@
 }
 
 .redesigned-theme-2018 input.text {
-  border-color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+.redesigned-theme-2018 input.text:focus {
+  border-color: #2685c6  !important;
 }
 
 .wufoo .wufoo-dropdown-control {
-  border-color: #fff !important;
+  border: 2px solid #1b1b1b !important;
+}
+
+.redesigned-theme-2018 .wufoo textarea.textarea {
+  border: 2px solid #fff !important;
+}
+.redesigned-theme-2018 .wufoo textarea.textarea:focus {
+  border-color: #2685c6  !important;
 }
 
 .redesigned-theme-2018 .wufoo .wufoo-file-upload.wufoo-no-file {
-  border-color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+/* Submit button */
+.redesigned-theme-2018 input.btTxt {
+  background-color: transparent !important;
+  border: 2px solid #1b1b1b !important;
+  color: #1b1b1b !important;
+}
+
+.redesigned-theme-2018 input.btTxt:hover {
+  background-color: #1b1b1b !important;
+  border: 2px solid #1b1b1b !important;
+  color: #fff !important;
 }
