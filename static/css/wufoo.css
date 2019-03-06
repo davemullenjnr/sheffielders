@@ -1,0 +1,73 @@
+.wufoo {
+  background-color: #f1f1f1;
+  font-family: 'Graphik', sans-serif; }
+
+.embed #container {
+  overflow: auto; }
+
+.wufoo label.desc {
+  margin: 0px;
+  font-size: 1.8rem;
+  font-size: 18px; }
+
+.wufoo legend.desc {
+  margin: 10px 0px 4px 0px;
+  font-weight: normal; }
+
+.wufoo input.text {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 1.4em; }
+
+.wufoo textarea.textarea {
+  border-radius: 4px;
+  font-size: 1.4em;
+  padding: 8px; }
+
+.wufoo .instruct {
+  line-height: 1.2;
+  margin-bottom: 12px; }
+
+.wufoo li {
+  width: auto;
+  margin-bottom: 0.5rem; }
+
+form ul {
+  max-width: 100vw; }
+
+form li {
+  padding: 0; }
+
+form li.buttons {
+  padding: 10px 0;
+  margin-bottom: 0; }
+
+form li.buttons input {
+  margin-left: 2px; }
+
+.safari .wufoo select.select {
+  margin-bottom: 8px;
+  padding: 6px; }
+
+.wufoo input.btTxt {
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 4px 24px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+.wufoo input.btTxt:hover {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25); }
+
+.wufoo .section h3 {
+  margin: 8px 8px 0px 8px !important; }
+
+li.notStacked div span {
+  padding-bottom: 4px; }
