@@ -1,4 +1,7 @@
 /* Custom Wufoo styles */
+.redesigned-theme-2018 * {
+  font-family: 'IBM Plex Serif',serif;
+}
 .wufoo {
   font-family: 'IBM Plex Serif',serif;
 }
