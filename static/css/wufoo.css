@@ -11,8 +11,8 @@
   border-color: #2685c6  !important;
 }
 
-.wufoo .wufoo-dropdown-control {
-  border: 2px solid #1b1b1b !important;
+.redesigned-theme-2018 input.radio:checked+label.choice:before, .redesigned-theme-2018 input.radio:not(:checked)+label.choice:before {
+  background-color: #fff !important;
 }
 
 .redesigned-theme-2018 .wufoo textarea.textarea {
@@ -24,17 +24,4 @@
 
 .redesigned-theme-2018 .wufoo .wufoo-file-upload.wufoo-no-file {
   border: 2px solid #fff !important;
-}
-
-/* Submit button */
-.redesigned-theme-2018 input.btTxt {
-  background-color: transparent !important;
-  border: 2px solid #1b1b1b !important;
-  color: #1b1b1b !important;
-}
-
-.redesigned-theme-2018 input.btTxt:hover {
-  background-color: #1b1b1b !important;
-  border: 2px solid #1b1b1b !important;
-  color: #fff !important;
 }
