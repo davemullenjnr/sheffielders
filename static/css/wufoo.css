@@ -1,7 +1,16 @@
 /* Custom Wufoo styles */
 .redesigned-theme-2018 * {
-  font-family: 'IBM Plex Serif',serif !important;
+  
 }
-.wufoo {
-  font-family: 'IBM Plex Serif',serif;
+
+.redesigned-theme-2018 input.text {
+  border-color: #fff !important;
+}
+
+.wufoo .wufoo-dropdown-control {
+  border-color: #fff !important;
+}
+
+.redesigned-theme-2018 .wufoo .wufoo-file-upload.wufoo-no-file {
+  border-color: #fff !important;
 }
