@@ -126,7 +126,7 @@ const JoinPage = () => (
       </Section>
       <Section>
         <Heading>Join Sheffielders</Heading>
-        <Paragraph>By linking to eachother, we'll both gain domain authority (a good reputation). This will be beneficial to us and everyone else in our network.</Paragraph>
+        <Paragraph>By linking to eachother, we'll be signalling to the search engines that we vouch for eachother — bolstering our domain authority (good reputation). The outcome is a web of endorsement that will benefit everyone in our network.</Paragraph>
         <Paragraph>To join Sheffielders, just add a link to <b>sheffielders.org</b> from somewhere on your website and fill in the form below so that I can create your page and link back to you.</Paragraph>
         <FormContainer>
           <Form />
