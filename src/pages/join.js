@@ -12,6 +12,7 @@ import { Background } from '../components/elements/Layout'
 import { variables, typography } from '../theme';
 import TextSnippet from '../components/TextSnippet';
 import Form from '../components/Form';
+import { Link } from 'gatsby';
 
 // styles
 const Hero = styled.section`
@@ -69,12 +70,12 @@ const Heading = styled.h3`
 `
 const Paragraph = styled.p`
   font-family: ${typography.fontSerif};
-  font-size: ${typography.f6};
+  font-size: ${props => props.small ? `${typography.f7}` : `${typography.f6}`};
   line-height: 1.8;
   margin-bottom: ${variables.spacer * 3}rem;
 
   @media ${variables.md} {
-    font-size: ${typography.f5};
+    font-size: ${props => props.small ? `${typography.f6}` : `${typography.f5}`};
   }
 
   &:last-child {
@@ -102,7 +103,7 @@ const JoinPage = () => (
       <Hero>
         <HeroText>
           <b>Sheffielders is a network</b> of local businesses, projects, and
-          creatives who rely on organic search engine results to increase
+          creatives who rely on search engine results to increase
           their visibility and drive traffic to their website.
         </HeroText>
       </Hero>
@@ -113,23 +114,24 @@ const JoinPage = () => (
       </Section>
       <Section>
         <Heading>The importance of backlinks</Heading>
-        <Paragraph>Links to your website help Google (and other search engines) determine your reputation and, the more trust-worthy you are, the higher you will rank in search results. Combine that with some relevant, keyword-rich copy and your visibility in the results pages
+        <Paragraph>Links to your website help search engines (like Google) determine your reputation and, the more trust-worthy you are, the higher you will rank in search results. Combine the link with a relevant description of your services and your visibility in the results pages
         will begin to dramatically improve.</Paragraph>
         <Paragraph>Google have complex algorithms to determine which webpages to show first, depending on what the user is searching for. Aside from some good on-site optimisation; having external links pointing to your website, that reconfirm the products or services that you offer, will help to gain Google's confidence in serving your website as a top result.</Paragraph>
       </Section>
       <Section>
         <Heading>How do search engines determine credibility?</Heading>
         <Paragraph><b>Backlinks!</b><br />
-        The primary aim of search engines is to consistently deliver relevant webpage results from credible sources. Backlinks are a search engine's equivalent to word-of-mouth recommendations; building your reputation and earning trust.</Paragraph>
+        The primary aim of a search engine is to consistently deliver relevant webpage results from credible sources. Backlinks are a search engine's equivalent to word-of-mouth recommendations; building your reputation and earning trust.</Paragraph>
         <Paragraph>A backlink to your website is like a 'vote of confidence' to Google's PageRank algorithm, and is undoubtedly the strongest signal to the value of your content.</Paragraph>
       </Section>
       <Section>
         <Heading>Join Sheffielders</Heading>
-        <Paragraph>To join Sheffielders, simply add a link to <b>sheffielders.org</b> from somewhere on your website and fill in the form below so that I can create your page and link back to you.</Paragraph>
+        <Paragraph>By linking to eachother, we'll both gain domain authority (a good reputation). This will be beneficial to us and everyone else in our network.</Paragraph>
+        <Paragraph>To join Sheffielders, just add a link to <b>sheffielders.org</b> from somewhere on your website and fill in the form below so that I can create your page and link back to you.</Paragraph>
         <FormContainer>
           <Form />
         </FormContainer>
-        <Paragraph>By linking back to sheffielders.org, we'll both gain domain authority which will be mutually beneficial to us and everyone else within this network.</Paragraph>
+        <Paragraph small>Link example, A footnote on your about page. <i>"Proud <Link to="https://sheffielders.org">Sheffielders</Link>”</i></Paragraph>
       </Section>
     </Content>
   </Info>
