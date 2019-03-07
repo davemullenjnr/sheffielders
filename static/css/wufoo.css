@@ -26,3 +26,12 @@
 .redesigned-theme-2018 .wufoo .wufoo-file-upload.wufoo-no-file {
   border: 2px solid #fff !important;
 }
+
+.redesigned-theme-2018 form span.req {
+  color: rgba(0,0,0,0.3) !important;
+  font-size: 24px !important;
+  position: relative !important;
+  left: 0 !important;
+  top: 0 !important;
+  font-weight: normal !important;
+}
