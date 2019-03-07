@@ -37,8 +37,8 @@
 }
 
 .wufoo {
-  background-color: #f1f1f1;
-  font-family: 'Graphik', sans-serif; }
+  background-color: transparent;
+}
 
 .embed #container {
   overflow: auto; }
