@@ -6,6 +6,7 @@ import { typography, variables } from '../theme';
 const Title = styled.h4`
   font-family: ${typography.fontSans};
   font-weight: normal;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: ${variables.spacer / 2}rem;
   margin-bottom: ${variables.spacer}rem;
