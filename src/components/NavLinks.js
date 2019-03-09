@@ -45,6 +45,7 @@ const NavLinks = () => {
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Creatives</CategoryTitle>
+          <NavLink to="/collective/dan-cook">dan cook</NavLink>
           <NavLink to="/collective/dave-mullen-jnr">dave mullen jnr</NavLink>
         </CategoryBlock>
         <CategoryBlock>
