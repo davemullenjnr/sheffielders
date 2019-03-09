@@ -37,8 +37,6 @@ export default class Footer extends Component {
       <LayoutWrapper>
         <Flex>
           <Credit>
-            Curated by <a href="https://davemullenjnr.co.uk">Dave Mullen Jnr</a>
-            <br />
             hello@sheffielders.org
           </Credit>
           <Year>© {new Date().getFullYear()}</Year>
