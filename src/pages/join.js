@@ -97,7 +97,6 @@ const JoinPage = () => (
     <Helmet>
       <meta name="robots" content="noindex" />
     </Helmet>
-    <SEO title="A collective of businesses, creatives, and projects" keywords={[`sheffielders`, `Sheffield`]} />
     <Background pink>
       <Header />
       <Hero>
@@ -131,7 +130,7 @@ const JoinPage = () => (
         <FormContainer>
           <Form />
         </FormContainer>
-        <Paragraph small>Link example, A footnote on your about page. <i>"Proud <Link to="https://sheffielders.org">Sheffielders</Link>”</i></Paragraph>
+        <Paragraph small>Link example: A footnote on your about page. <br />Something like <i>"Proud Sheffielder!”</i> or <i>"Member of sheffielders.org”</i>with the link directing to https://sheffielders.org or your profile on the site.</Paragraph>
       </Section>
     </Content>
   </Info>
