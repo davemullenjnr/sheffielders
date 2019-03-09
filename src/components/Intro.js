@@ -55,7 +55,7 @@ const SubHeading = styled.p`
   }
 `
 
-const MainHeading = styled.h2`
+const MainHeading = styled.h1`
   font-family: ${typography.fontSerif};
   font-size: ${typography.f5};
   line-height: 1.5;

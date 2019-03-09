@@ -56,7 +56,7 @@ const Category = styled.p`
   }
 `
 
-const Title = styled.h2`
+const Title = styled.h1`
   margin-bottom: ${variables.spacer * 4}rem;
   font-size: ${typography.f3};
   color: ${variables.white};
