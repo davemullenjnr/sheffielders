@@ -101,11 +101,12 @@ const Decription = styled.section`
   }
 
   a {
+    border-bottom: 1px solid ${variables.white};
     text-decoration: none;
 
     &:hover {
       color: ${variables.pink};
-      border-bottom: 1px solid ${variables.pink};
+      border-color: ${variables.pink};
     }
   }
 `
