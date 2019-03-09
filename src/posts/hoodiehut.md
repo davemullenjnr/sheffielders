@@ -1,7 +1,7 @@
 ---
 slug: hoodiehut
 title: HoodieHut
-description: Inspiring personalised hoodies for schools, colleges, and universities.
+description: Personalised hoodies for schools, colleges, and universities.
 category: business
 sitelink: https://hoodiehut.co.uk
 hero: "./images/hoodiehut.png"
