@@ -14,6 +14,7 @@ const Flex = styled.div`
   align-items: flex-end;
 `
 const Credit = styled.p`
+  font-family: ${typography.fontSans};
   color: ${props => props.theme.light};
   font-size: ${typography.f7};
 
@@ -22,6 +23,7 @@ const Credit = styled.p`
   }
 `
 const Year = styled.p`
+  font-family: ${typography.fontSans};
   color: ${props => props.theme.light};
   font-size: ${typography.f7};
 

@@ -50,11 +50,12 @@ const Listing = styled.article`
 `
 
 const Category = styled.p`
-  margin-bottom: ${variables.spacer / 2}rem;
+  font-family: ${typography.fontSans};
   text-transform: uppercase;
   font-size: ${typography.f7};
   letter-spacing: ${variables.spacer / 4}rem;
   font-weight: bold;
+  margin-bottom: ${variables.spacer / 2}rem;
 
   @media ${variables.sm} {
     letter-spacing: ${variables.spacer / 2}rem;
@@ -75,12 +76,11 @@ const Title = styled.h2`
 `
 
 const Decription = styled.p`
+  font-size: ${typography.f6};
   margin-bottom: ${variables.spacer}rem;
-  font-size: ${typography.f7};
-  line-height: 2;
 
   @media ${variables.sm} {
-    font-size: ${typography.f6};
+    font-size: ${typography.f5};
     max-width: 60vw;
     margin-left: auto;
     margin-right: auto;
@@ -96,16 +96,17 @@ const Decription = styled.p`
 `
 
 const ListingLink = styled(Link)`
+  font-family: ${typography.fontSans};
   font-size: ${typography.f7};
   text-decoration:none;
-  border-bottom: ${variables.spacer / 4}rem solid ${variables.pink};
-  box-shadow: inset 0 -${variables.spacer}rem 0 ${variables.pink};
+  border-bottom: ${variables.spacer / 4}rem solid ${variables.brand};
+  box-shadow: inset 0 -${variables.spacer}rem 0 ${variables.brand};
   transition: 0.15s ease;
   padding: ${variables.spacer / 4}rem;
   line-height: 1;
 
   &:hover {
-    background-color: ${variables.pink};
+    background-color: ${variables.brand};
   }
 
   @media ${variables.sm} {

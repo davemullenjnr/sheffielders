@@ -18,8 +18,9 @@ const CategoryBlock = styled.section`
   margin-bottom: ${variables.spacer * 4}rem;
 `
 const CategoryTitle = styled.p`
+  font-family: ${typography.fontSans};
   font-size: ${typography.f6};
-  color: ${variables.pink};
+  color: ${variables.brand};
   text-transform: uppercase;
 `
 const NavLink = styled(Link)`
@@ -30,7 +31,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: ${variables.pink};
+    color: ${variables.brand};
     text-decoration: underline;
   }
 `

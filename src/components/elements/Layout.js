@@ -30,7 +30,7 @@ export const Main = styled.main`
 
 // backgrounds
 export const Background = styled.div`
-  background-color: ${props => props.pink ? `${variables.pink}` : props.black ? `${variables.black}` : `${variables.white}`};
+  background-color: ${props => props.brand ? `${variables.brand}` : props.black ? `${variables.black}` : `${variables.white}`};
   background-image: url(${props => props.black ? `${whiteTexture}` : `${blackTexture}`});
   background-size: 300px 300px;
 `

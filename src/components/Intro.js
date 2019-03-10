@@ -46,12 +46,12 @@ const Box = styled.div`
 `
 
 const SubHeading = styled.p`
+  font-family: ${typography.fontSans};
   font-size: ${typography.f6};
-  text-transform: uppercase;
   margin-bottom: ${variables.spacer}rem;
 
   @media ${variables.md} {
-    letter-spacing: 0.1rem;
+    font-size: ${typography.f5};
   }
 `
 
@@ -67,15 +67,15 @@ const MainHeading = styled.h1`
 
 const CollectiveLink = styled(Link)`
   text-decoration:none;
-  border-bottom: ${variables.spacer / 4}rem solid ${variables.pink};
-  box-shadow: inset 0 -${variables.spacer}rem 0 ${variables.pink};
+  border-bottom: ${variables.spacer / 4}rem solid ${variables.brand};
+  box-shadow: inset 0 -${variables.spacer}rem 0 ${variables.brand};
   display: inline-block;
   transition: 0.15s ease;
   padding: ${variables.spacer / 4}rem;
   line-height: 1;
 
   &:hover {
-    background-color: ${variables.pink};
+    background-color: ${variables.brand};
   }
 `
 

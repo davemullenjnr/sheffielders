@@ -63,7 +63,7 @@ html {
 }
 
 body {
-  font-family: 'Nitti', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -89,7 +89,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'IBM Plex Serif', serif;
+  font-weight: bold;
   line-height: 1.2;
 }
 
@@ -105,7 +105,7 @@ img {
 }
 
 ::selection {
-  background: #FFD0D2;
+  background: #ffb3a1;
   color: #1b1b1b;
 }
 

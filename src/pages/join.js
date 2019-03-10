@@ -85,7 +85,7 @@ const Paragraph = styled.p`
 
 const FormContainer = styled.div`
   padding: ${variables.spacer * 2}rem;
-  background-color: ${variables.pink};
+  background-color: ${variables.brand};
   border-radius: ${variables.spacer}rem;
   margin-bottom: ${variables.spacer * 3}rem;
 `
@@ -97,7 +97,7 @@ const JoinPage = () => (
     <Helmet>
       <meta name="robots" content="noindex" />
     </Helmet>
-    <Background pink>
+    <Background brand>
       <Header />
       <Hero>
         <HeroText>

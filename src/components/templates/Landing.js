@@ -11,7 +11,7 @@ import { BackgroundUnite, Background, Scafolding, Main } from '../elements/Layou
 
 // render
 const Landing = ({ children }) => (
-  <Background pink>
+  <Background brand>
     <BackgroundUnite />
       <Scafolding>
         <Head />

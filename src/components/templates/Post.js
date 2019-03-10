@@ -44,6 +44,7 @@ const Profile = styled.article`
 `
 
 const Category = styled.p`
+  font-family: ${typography.fontSans};
   margin-bottom: ${variables.spacer / 2}rem;
   text-transform: uppercase;
   font-size: ${typography.f7};
@@ -52,6 +53,7 @@ const Category = styled.p`
   color: ${variables.white};
 
   @media ${variables.sm} {
+    font-size: ${typography.f6};
     letter-spacing: ${variables.spacer / 2}rem;
   }
 `
@@ -66,29 +68,28 @@ const Title = styled.h1`
   }
 
   @media ${variables.md} {
+    margin-bottom: ${variables.spacer * 5}rem;
     font-size: ${typography.f1};
   }
 `
 
 const Decription = styled.section`
   margin-bottom: ${variables.spacer * 4}rem;
-  font-size: ${typography.f7};
+  font-size: ${typography.f6};
   color: ${variables.white};
-  line-height: 2;
+  line-height: 1.8;
 
   @media ${variables.sm} {
-    font-size: ${typography.f6};
+    font-size: ${typography.f5};
     max-width: 60vw;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media ${variables.md} {
+    margin-bottom: ${variables.spacer * 5}rem;
+    font-size: ${typography.f4};
     max-width: 50vw;
-  }
-
-  @media ${variables.lg} {
-    max-width: 40vw;
   }
 
   p {
@@ -101,31 +102,34 @@ const Decription = styled.section`
   }
 
   a {
-    border-bottom: 1px solid ${variables.white};
-    text-decoration: none;
+    text-decoration-color: ${variables.secondary};
 
     &:hover {
-      color: ${variables.pink};
-      border-color: ${variables.pink};
+      color: ${variables.brand};
     }
   }
 `
 
 const SiteLink = styled.a`
+  font-family: ${typography.fontSans};
   font-size: ${typography.f7};
   color: ${variables.white};
   text-decoration: none;
-  border-bottom: ${variables.spacer / 4}rem solid ${variables.pink};
+  border-bottom: ${variables.spacer / 4}rem solid ${variables.brand};
   transition: 0.15s ease;
   padding: ${variables.spacer / 4}rem 0 ${variables.spacer}rem;
   line-height: 1;
 
   &:hover {
-    color: ${variables.pink};
+    color: ${variables.brand};
   }
 
   @media ${variables.sm} {
     font-size: ${typography.f6};
+  }
+
+  @media ${variables.md} {
+    font-size: ${typography.f5};
   }
 `
 
