@@ -86,7 +86,7 @@ const Paragraph = styled.p`
 const FormContainer = styled.div`
   padding: ${variables.spacer * 2}rem;
   background-color: ${variables.brand};
-  border-radius: ${variables.spacer}rem;
+  border-radius: ${variables.spacer / 2}rem;
   margin-bottom: ${variables.spacer * 3}rem;
 `
 
@@ -109,7 +109,7 @@ const JoinPage = () => (
     </Background>
     <Content>
       <Section wide>
-        <TextSnippet title="In short" description="Backlinks improve your Google PageRank, increase your visibility and drive traffic to your website. Let's work together to create a little local network of links and help each other grow." />
+        <TextSnippet title="In a nutshell" description="Backlinks improve your Google PageRank, increase your visibility and drive traffic to your website. Let's work together to create a little local network of links and help each other grow." />
       </Section>
       <Section>
         <Heading>The importance of backlinks</Heading>
