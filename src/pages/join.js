@@ -130,7 +130,7 @@ const JoinPage = () => (
         <FormContainer>
           <Form />
         </FormContainer>
-        <Paragraph small>Link example: A footnote on your about page. <br />Something like <i>"Proud Sheffielder!”</i> or <i>"Member of sheffielders.org”</i>with the link directing to https://sheffielders.org or your profile on the site.</Paragraph>
+        <Paragraph small>Your link to Sheffielders could be a footnote on your about page or a mention in a blog post. Something like <b>"Proud Sheffielder!”</b> or <b>"Member of sheffielders.org”</b> with the link directing to <b>sheffielders.org</b> or directly to your profile (once it's been setup).</Paragraph>
       </Section>
     </Content>
   </Info>
