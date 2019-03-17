@@ -53,6 +53,7 @@ const NavLinks = () => {
           <CategoryTitle>Businesses</CategoryTitle>
           <NavLink to="/collective/tshirtexpert">tshirtexpert</NavLink>
           <NavLink to="/collective/hoodiehut">hoodiehut</NavLink>
+          <NavLink to="/collective/cathy-sutherland-jewellery">cathy sutherland jewellery</NavLink>
           <NavLink to="/collective/torso-clothing">torso clothing</NavLink>
         </CategoryBlock>
       </Container>

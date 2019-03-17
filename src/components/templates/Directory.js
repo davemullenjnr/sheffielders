@@ -65,12 +65,20 @@ const Category = styled.p`
 const Title = styled.h2`
   margin-bottom: ${variables.spacer}rem;
   font-size: ${typography.f3};
+  margin-left: auto;
+  margin-right: auto;
 
   @media ${variables.sm} {
     font-size: ${typography.f2};
+    max-width: 60vw;
   }
 
   @media ${variables.md} {
+    font-size: ${typography.f1};
+    max-width: 50vw;
+  }
+
+  @media ${variables.lg} {
     font-size: ${typography.f1};
   }
 `

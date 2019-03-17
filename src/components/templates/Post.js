@@ -62,14 +62,18 @@ const Title = styled.h1`
   margin-bottom: ${variables.spacer * 4}rem;
   font-size: ${typography.f3};
   color: ${variables.white};
+  margin-left: auto;
+  margin-right: auto;
 
   @media ${variables.sm} {
     font-size: ${typography.f2};
+    max-width: 60vw;
   }
 
   @media ${variables.md} {
     margin-bottom: ${variables.spacer * 5}rem;
     font-size: ${typography.f1};
+    max-width: 50vw;
   }
 `
 
