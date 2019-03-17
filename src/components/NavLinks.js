@@ -41,10 +41,6 @@ const NavLinks = () => {
     <LayoutWrapper>
       <Container>
         <CategoryBlock>
-          <CategoryTitle>Projects</CategoryTitle>
-          <NavLink to="/collective/geometry-club">geometry club</NavLink>
-        </CategoryBlock>
-        <CategoryBlock>
           <CategoryTitle>Creatives</CategoryTitle>
           <NavLink to="/collective/dan-cook">dan cook</NavLink>
           <NavLink to="/collective/cathy-sutherland">cathy sutherland</NavLink>
@@ -55,6 +51,10 @@ const NavLinks = () => {
           <NavLink to="/collective/tshirtexpert">tshirtexpert</NavLink>
           <NavLink to="/collective/hoodiehut">hoodiehut</NavLink>
           <NavLink to="/collective/torso-clothing">torso clothing</NavLink>
+        </CategoryBlock>
+        <CategoryBlock>
+          <CategoryTitle>Projects</CategoryTitle>
+          <NavLink to="/collective/geometry-club">geometry club</NavLink>
         </CategoryBlock>
       </Container>
     </LayoutWrapper>
