@@ -45,6 +45,7 @@ const NavLinks = () => {
           <NavLink to="/collective/dan-cook">dan cook</NavLink>
           <NavLink to="/collective/cathy-sutherland">cathy sutherland</NavLink>
           <NavLink to="/collective/dave-mullen-jnr">dave mullen jnr</NavLink>
+          <NavLink to="/collective/ben-partridge">ben partridge</NavLink>
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Businesses</CategoryTitle>
