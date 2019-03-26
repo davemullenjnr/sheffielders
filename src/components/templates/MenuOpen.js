@@ -15,7 +15,7 @@ const MenuOpen = ({ children }) => (
     <Scafolding>
       <Head />
       <HeaderMenu logofill={variables.white} />
-      <Main center>{children}</Main>
+      <Main>{children}</Main>
     </Scafolding>
   </Background>
 )

@@ -5,10 +5,16 @@ import { variables, typography } from '../theme'
 import { LayoutWrapper } from './elements/Layout'
 
 const Container = styled.div`
-  margin: 0 ${variables.spacer * 2}rem ${variables.spacer * 2}rem;
+  margin: ${variables.spacer * 2}rem;
+  display: flex;
+  flex-direction: column;
 
   @media ${variables.md} {
     margin-left: 8vw;
+    margin-right: 8vw;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 42rem;
   }
 `
 
