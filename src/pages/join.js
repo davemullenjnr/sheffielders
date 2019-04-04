@@ -125,12 +125,10 @@ const JoinPage = () => (
       </Section>
       <Section>
         <Heading>Join Sheffielders</Heading>
-        <Paragraph>By linking to eachother, we'll be signalling to the search engines that we vouch for eachother — bolstering our domain authority (good reputation). The outcome is a web of endorsement that will benefit everyone in our network.</Paragraph>
-        <Paragraph>To join Sheffielders, just add a link to <b>sheffielders.org</b> from somewhere on your website and fill in the form below so that I can create your page and link back to you.</Paragraph>
+        <Paragraph>Fill in the form below and i'll set up your page (just like <Link to="/collective/dave-mullen-jnr">this one</Link>) and send some good reputation your way.</Paragraph>
         <FormContainer>
           <Form />
         </FormContainer>
-        <Paragraph small>Your link to Sheffielders could be a footnote on your about page or a mention in a blog post. Something like <b>"Proud Sheffielder!”</b> or <b>"Member of sheffielders.org”</b> with the link directing to <b>sheffielders.org</b> or directly to your profile (once it's been setup).</Paragraph>
       </Section>
     </Content>
   </Info>
