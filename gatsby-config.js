@@ -3,8 +3,10 @@ module.exports = {
     title: `Sheffielders`,
     description: `A collective of businesses, projects and creatives who have one thing in common — we're all Sheffielders!`,
     author: `@davemullenjnr`,
+    siteUrl: `https://sheffielders.org`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
