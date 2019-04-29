@@ -48,9 +48,10 @@ const NavLinks = () => {
       <Container>
         <CategoryBlock>
           <CategoryTitle>Creatives</CategoryTitle>
-          <NavLink to="/collective/dan-cook">dan cook</NavLink>
-          <NavLink to="/collective/cathy-sutherland">cathy sutherland</NavLink>
           <NavLink to="/collective/dave-mullen-jnr">dave mullen jnr</NavLink>
+          <NavLink to="/collective/cathy-sutherland">cathy sutherland</NavLink>
+          <NavLink to="/collective/dan-cook">dan cook</NavLink>
+          <NavLink to="/collective/melissa-montague">melissa montague</NavLink>
           <NavLink to="/collective/ben-partridge">ben partridge</NavLink>
           <NavLink to="/collective/katie-edge-mellor">katie edge mellor</NavLink>
         </CategoryBlock>
