@@ -165,7 +165,7 @@ export default class Post extends Component {
       <Background black>
         <Scafolding>
           <Head />
-          <SEO title={markdownRemark.frontmatter.title} keywords={[`${markdownRemark.frontmatter.title}`]} />
+          <SEO title={markdownRemark.frontmatter.title} description={markdownRemark.frontmatter.description} keywords={[`${markdownRemark.frontmatter.title}`]} />
           <Header logofill={variables.white} menufill={variables.white} />
           <Main>
             <Profile>
