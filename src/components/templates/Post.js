@@ -97,11 +97,15 @@ const Decription = styled.section`
   }
 
   p {
-    margin-bottom: ${variables.spacer * 2}rem;
+    margin-bottom: ${variables.spacer * 3}rem;
     line-height: 1.8;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media ${variables.md} {
+      margin-bottom: ${variables.spacer * 4}rem;
     }
   }
 
