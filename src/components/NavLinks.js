@@ -54,6 +54,7 @@ const NavLinks = () => {
           <NavLink to="/collective/liam-rimmington">liam rimmington</NavLink>
           <NavLink to="/collective/ben-partridge">ben partridge</NavLink>
           <NavLink to="/collective/melissa-montague">melissa montague</NavLink>
+          <NavLink to="/collective/ryan-sheppeck">ryan sheppeck</NavLink>
           <NavLink to="/collective/katie-edge-mellor">katie edge mellor</NavLink>
         </CategoryBlock>
         <CategoryBlock>
