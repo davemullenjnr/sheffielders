@@ -3,7 +3,7 @@ export const spacer = 0.5;
 
 // breakpoints
 export const sm = `(min-width: 36rem)`;
-export const md = `(min-width: 48rem)`;
+export const md = `(min-width: 56rem)`;
 export const lg = `(min-width: 80rem)`;
 
 // colours

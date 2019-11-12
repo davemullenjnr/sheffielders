@@ -2,7 +2,7 @@
 slug: liam-rimmington
 title: Liam Rimmington
 description: Portrait, brand, and lifestyle photographer. Founder of In Still Motion Photography.
-category: Creative
+category: creative
 sitelink: https://instillmotion.co/
 hero: "./images/liam-rimmington.jpg"
 ---

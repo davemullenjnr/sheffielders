@@ -2,7 +2,7 @@
 slug: melissa-montague
 title: Melissa Montague
 description: Metalsmith creating decorative and functional metal objects.
-category: Creative
+category: creative
 sitelink: https://melissamontague.co.uk
 hero: "./images/melissa-montague.jpg"
 ---

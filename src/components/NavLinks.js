@@ -9,12 +9,18 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 
+
   @media ${variables.md} {
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 42rem;
+    max-width: 48rem;
+  }
+
+  @media ${variables.lg} {
+    margin-left: 8vw;
+    margin-right: 8vw;
   }
 `
 
@@ -35,10 +41,15 @@ const NavLink = styled(Link)`
   font-size: ${typography.f4};
   font-weight: bold;
   text-decoration: none;
+  margin-bottom: ${variables.spacer / 2}rem;
 
   &:hover {
     color: ${variables.brand};
     text-decoration: underline;
+  }
+
+  @media ${variables.md} {
+    margin-bottom: ${variables.spacer}rem;
   }
 `
 
@@ -66,6 +77,7 @@ const NavLinks = () => {
         <CategoryBlock>
           <CategoryTitle>Projects</CategoryTitle>
           <NavLink to="/collective/geometry-club">geometry club</NavLink>
+          <NavLink to="/collective/icon-geography">icongeography</NavLink>
         </CategoryBlock>
       </Container>
     </LayoutWrapper>

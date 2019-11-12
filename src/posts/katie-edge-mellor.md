@@ -2,7 +2,7 @@
 slug: katie-edge-mellor
 title: Katie Edge Mellor
 description: Graphic designer and screen printer. Founder of Own Way studio.
-category: Creative
+category: creative
 sitelink: https://ownway.co/
 hero: "./images/katie-edge-mellor.jpg"
 ---

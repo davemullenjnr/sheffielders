@@ -41,7 +41,7 @@ const Box = styled.div`
   }
 
   @media ${variables.lg} {
-    max-width: 33vw;
+    max-width: 40vw;
   }
 `
 
@@ -62,6 +62,10 @@ const MainHeading = styled.h1`
 
   @media ${variables.md} {
     font-size: ${typography.f4};
+  }
+
+  @media ${variables.lg} {
+    font-size: ${typography.f3};
   }
 `
 

@@ -2,7 +2,7 @@
 slug: dan-cook
 title: Dan Cook
 description: Landscape and nature photographer. Founder of Danscape Photography.
-category: Creative
+category: creative
 sitelink: https://danscape.co
 hero: "./images/danscape.jpg"
 ---

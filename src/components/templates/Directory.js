@@ -7,7 +7,7 @@ import { variables, typography } from '../../theme';
 // query
 const DIRECTORY_QUERY = graphql`
   query PostDirectory {
-    allMarkdownRemark {
+    allMarkdownRemark (sort: {fields: frontmatter___title, order: ASC}) {
       edges {
         node {
           frontmatter {
@@ -70,7 +70,7 @@ const Title = styled.h2`
 
   @media ${variables.sm} {
     font-size: ${typography.f2};
-    max-width: 60vw;
+    max-width: 64vw;
   }
 
   @media ${variables.md} {
