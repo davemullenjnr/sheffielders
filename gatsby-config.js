@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://sheffielders.org`,
   },
   plugins: [
+    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -32,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-134758845-1",
+        trackingId: 'UA--update-me-1',
       },
     },
     `gatsby-transformer-remark`,
