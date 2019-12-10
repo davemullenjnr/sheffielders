@@ -30,9 +30,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        id: "UA-134758845-1",
+        trackingIds: ["UA-134758845-1"]
       },
     },
     `gatsby-transformer-remark`,
