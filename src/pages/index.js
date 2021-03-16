@@ -11,7 +11,7 @@ import Intro from '../components/Intro';
 //render
 const LandingPage = () => (
   <Landing>
-    <SEO title="A collective of businesses, creatives, and projects" keywords={[`sheffielders`, `Sheffield`]} />
+    <SEO title="Sheffielders" description="A collective of businesses, creatives, and projects from people living and working in Sheffield, UK." keywords={[`sheffielders`, `Sheffield`]} />
     <Intro />
   </Landing>
 )
