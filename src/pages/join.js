@@ -113,7 +113,7 @@ const JoinPage = () => (
       </Section>
       <Section>
         <Heading>The importance of backlinks</Heading>
-        <Paragraph>Links to your website help search engines (like Google) determine your reputation and, the more trust-worthy you are, the higher you will rank in search results. Combine the link with a relevant description of your services and your visibility in the results pages
+        <Paragraph>Links to your website help search engines (like Google) determine your reputation and, the more trustworthy you are, the higher you will rank in search results. Combine the link with a relevant description of your services and your visibility in the results pages
         will begin to dramatically improve.</Paragraph>
         <Paragraph>Google have complex algorithms to determine which webpages to show first, depending on what the user is searching for. Aside from some good on-site optimisation; having external links pointing to your website, that reconfirm the products or services that you offer, will help to gain Google's confidence in serving your website as a top result.</Paragraph>
       </Section>
