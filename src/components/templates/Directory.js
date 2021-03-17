@@ -134,7 +134,7 @@ const Directory = () => (
               <Category>{node.frontmatter.category}</Category>
               <Title>{node.frontmatter.title}</Title>
               <Decription>{node.frontmatter.description}</Decription>
-              <ListingLink to={`/collective/${node.frontmatter.slug}`}>View Profile</ListingLink>
+              <ListingLink to={`/collective/${node.frontmatter.slug}/`}>View Profile</ListingLink>
             </Listing>
           ))
         }
