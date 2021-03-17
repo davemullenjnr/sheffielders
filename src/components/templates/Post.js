@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import './../../theme/base.css'
 import styled, { ThemeProvider } from 'styled-components'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import SEO from '../core/Seo'
 import Head from '../core/Head'
@@ -141,7 +141,7 @@ const SiteLink = styled.a`
   }
 `
 
-const HeroImage = styled(Img)`
+const HeroImage = styled(GatsbyImage)`
   background-color: ${variables.white};
   margin: 0 auto;
   margin-bottom: ${variables.spacer * 4}rem;
@@ -160,6 +160,10 @@ const HeroImage = styled(Img)`
     height: 160px;
     border: ${variables.spacer / 2}rem solid ${variables.white};
   }
+
+  img {
+    border-radius: 50%;
+  }
 `
 
 export default class Post extends Component {
@@ -173,7 +177,7 @@ export default class Post extends Component {
           <Header logofill={variables.white} menufill={variables.white} />
           <Main>
             <Profile>
-              <HeroImage fluid={markdownRemark.frontmatter.hero.childImageSharp.fluid} fadeIn={false}/>
+              <HeroImage image={markdownRemark.frontmatter.hero.childImageSharp.gatsbyImageData} alt={markdownRemark.frontmatter.title} />
               <Category>{markdownRemark.frontmatter.category}</Category>
               <Title>{markdownRemark.frontmatter.title}</Title>
               <Decription dangerouslySetInnerHTML={{ __html: markdownRemark.html}} />
@@ -187,28 +191,25 @@ export default class Post extends Component {
           </ThemeProvider>
         </Scafolding>
       </Background>
-    )
+    );
   }
 }
 
-export const query = graphql`
-  query PostQuery($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        category
-        description
-        sitelink
-        slug
-        hero {
-          childImageSharp {
-            fluid(maxWidth: 160) {
-              ...GatsbyImageSharpFluid_noBase64
-            }
-          }
+export const query = graphql`query PostQuery($slug: String!) {
+  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      title
+      category
+      description
+      sitelink
+      slug
+      hero {
+        childImageSharp {
+          gatsbyImageData(width: 160, placeholder: DOMINANT_COLOR, layout: CONSTRAINED)
         }
       }
     }
   }
+}
 `
