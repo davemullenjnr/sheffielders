@@ -31,7 +31,7 @@ export default class Menu extends Component {
   render() {
     const { menufill } = this.props
     return (
-      <MenuLink to="/menu">
+      <MenuLink to="/menu/">
         <MenuIconBox>
           <MenuIcon menufill={menufill} />
         </MenuIconBox>

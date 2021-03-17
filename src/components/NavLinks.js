@@ -59,25 +59,26 @@ const NavLinks = () => {
       <Container>
         <CategoryBlock>
           <CategoryTitle>Creatives</CategoryTitle>
-          <NavLink to="/collective/dave-mullen-jnr">dave mullen jnr</NavLink>
-          <NavLink to="/collective/cathy-sutherland">cathy sutherland</NavLink>
-          <NavLink to="/collective/dan-cook">dan cook</NavLink>
-          <NavLink to="/collective/liam-rimmington">liam rimmington</NavLink>
-          <NavLink to="/collective/ben-partridge">ben partridge</NavLink>
-          <NavLink to="/collective/melissa-montague">melissa montague</NavLink>
-          <NavLink to="/collective/ryan-sheppeck">ryan sheppeck</NavLink>
-          <NavLink to="/collective/katie-edge-mellor">katie edge mellor</NavLink>
+          <NavLink to="/collective/dave-mullen-jnr/">dave mullen jnr</NavLink>
+          <NavLink to="/collective/cathy-sutherland/">cathy sutherland</NavLink>
+          <NavLink to="/collective/dan-cook/">dan cook</NavLink>
+          <NavLink to="/collective/liam-rimmington/">liam rimmington</NavLink>
+          <NavLink to="/collective/ben-partridge/">ben partridge</NavLink>
+          <NavLink to="/collective/melissa-montague/">melissa montague</NavLink>
+          <NavLink to="/collective/ryan-sheppeck/">ryan sheppeck</NavLink>
+          <NavLink to="/collective/katie-edge-mellor/">katie edge mellor</NavLink>
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Businesses</CategoryTitle>
-          <NavLink to="/collective/tshirtexpert">tshirtexpert</NavLink>
-          <NavLink to="/collective/hoodiehut">hoodiehut</NavLink>
-          <NavLink to="/collective/torso-clothing">torso clothing</NavLink>
+          <NavLink to="/collective/tshirtexpert/">tshirtexpert</NavLink>
+          <NavLink to="/collective/hoodiehut/">hoodiehut</NavLink>
+          <NavLink to="/collective/torso-clothing/">torso clothing</NavLink>
+          <NavLink to="/collective/inner-city-weddings/">inner city weddings</NavLink>
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Projects</CategoryTitle>
-          <NavLink to="/collective/geometry-club">geometry club</NavLink>
-          <NavLink to="/collective/icon-geography">icongeography</NavLink>
+          <NavLink to="/collective/geometry-club/">geometry club</NavLink>
+          <NavLink to="/collective/icon-geography/">icongeography</NavLink>
         </CategoryBlock>
       </Container>
     </LayoutWrapper>

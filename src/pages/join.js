@@ -125,7 +125,7 @@ const JoinPage = () => (
       </Section>
       <Section>
         <Heading>Join Sheffielders</Heading>
-        <Paragraph>Fill in the form below and i'll set up your page (just like <Link to="/collective/dave-mullen-jnr">this one</Link>) and send some good reputation your way.</Paragraph>
+        <Paragraph>Fill in the form below and i'll set up your page (just like <Link to="/collective/dave-mullen-jnr/">this one</Link>) and send some good reputation your way.</Paragraph>
         <FormContainer>
           <Form />
         </FormContainer>
