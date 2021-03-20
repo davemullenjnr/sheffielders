@@ -169,11 +169,21 @@ const HeroImage = styled(GatsbyImage)`
 export default class Post extends Component {
   render() {
     const { markdownRemark } = this.props.data
+
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      'author': 'Sheffielders',
+      'headline': markdownRemark.frontmatter.title,
+      'articleBody': markdownRemark.rawMarkdownBody,
+      'publisher': 'Sheffielders',
+    };
+
     return (
       <Background black>
         <Scafolding>
           <Head />
-          <SEO title={markdownRemark.frontmatter.title} description={markdownRemark.frontmatter.description} keywords={[`${markdownRemark.frontmatter.title}`]} />
+          <SEO schemaMarkup={schema} title={markdownRemark.frontmatter.title} description={markdownRemark.frontmatter.description} keywords={[`${markdownRemark.frontmatter.title}`]} type="article" />
           <Header logofill={variables.white} menufill={variables.white} />
           <Main>
             <Profile>
@@ -198,6 +208,7 @@ export default class Post extends Component {
 export const query = graphql`query PostQuery($slug: String!) {
   markdownRemark(frontmatter: {slug: {eq: $slug}}) {
     html
+    rawMarkdownBody
     frontmatter {
       title
       category
