@@ -70,10 +70,11 @@ const NavLinks = () => {
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Businesses</CategoryTitle>
-          <NavLink to="/collective/tshirtexpert/">tshirtexpert</NavLink>
           <NavLink to="/collective/hoodiehut/">hoodiehut</NavLink>
+          <NavLink to="/collective/knots-massage/">knots massage</NavLink>
           <NavLink to="/collective/torso-clothing/">torso clothing</NavLink>
           <NavLink to="/collective/inner-city-weddings/">inner city weddings</NavLink>
+          <NavLink to="/collective/tshirtexpert/">tshirtexpert</NavLink>
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Projects</CategoryTitle>
