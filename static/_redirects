@@ -1,0 +1,5 @@
+# Redirect domain aliases to primary domain
+https://sheffielders.co.uk/* https://sheffielders.org/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://sheffielders.netlify.com/* https://sheffielders.org/:splat 301!
