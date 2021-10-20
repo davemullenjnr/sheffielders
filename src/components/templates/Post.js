@@ -111,6 +111,7 @@ const Decription = styled.section`
 
   a {
     text-decoration-color: ${variables.secondary};
+    text-decoration-thickness: 2px;
 
     &:hover {
       color: ${variables.brand};
