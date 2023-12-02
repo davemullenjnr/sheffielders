@@ -80,6 +80,7 @@ const NavLinks = () => {
           <CategoryTitle>Projects</CategoryTitle>
           <NavLink to="/collective/geometry-club/">geometry club</NavLink>
           <NavLink to="/collective/icon-geography/">icongeography</NavLink>
+          <NavLink to="/collective/chess-prints/">chess prints</NavLink>
         </CategoryBlock>
       </Container>
     </LayoutWrapper>
