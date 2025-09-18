@@ -1,3 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
 [[redirects]]
   from = "/hoodiehut/"
   to = "/collective/hoodiehut/"

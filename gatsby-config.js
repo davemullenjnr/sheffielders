@@ -30,12 +30,6 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: ["UA-134758845-1"]
-      },
-    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify`,

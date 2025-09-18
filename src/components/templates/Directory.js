@@ -2,12 +2,12 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { Main, LayoutWrapper } from '../elements/Layout'
-import { variables, typography } from '../../theme';
+import { variables, typography } from '../../theme'
 
 // query
 const DIRECTORY_QUERY = graphql`
   query PostDirectory {
-    allMarkdownRemark (sort: {fields: frontmatter___title, order: ASC}) {
+    allMarkdownRemark(sort: { frontmatter: { title: ASC } }) {
       edges {
         node {
           frontmatter {
@@ -27,7 +27,7 @@ const Listing = styled.article`
   text-align: center;
   max-width: 75vw;
   margin: ${variables.spacer * 12}rem auto;
-  
+
   &:first-child {
     margin-top: ${variables.spacer * 4}rem;
   }
@@ -40,7 +40,7 @@ const Listing = styled.article`
     margin: ${variables.spacer * 16}rem auto;
 
     &:first-child {
-    margin-top: ${variables.spacer * 6}rem;
+      margin-top: ${variables.spacer * 6}rem;
     }
 
     &:last-child {
@@ -106,7 +106,7 @@ const Decription = styled.p`
 const ListingLink = styled(Link)`
   font-family: ${typography.fontSans};
   font-size: ${typography.f7};
-  text-decoration:none;
+  text-decoration: none;
   border-bottom: ${variables.spacer / 4}rem solid ${variables.brand};
   box-shadow: inset 0 -${variables.spacer}rem 0 ${variables.brand};
   transition: 0.15s ease;
@@ -134,7 +134,9 @@ const Directory = () => (
               <Category>{node.frontmatter.category}</Category>
               <Title>{node.frontmatter.title}</Title>
               <Decription>{node.frontmatter.description}</Decription>
-              <ListingLink to={`/collective/${node.frontmatter.slug}/`}>View Profile</ListingLink>
+              <ListingLink to={`/collective/${node.frontmatter.slug}/`}>
+                View Profile
+              </ListingLink>
             </Listing>
           ))
         }
