@@ -5,6 +5,8 @@ description: Printed Hoodies for Schools
 category: business
 sitelink: https://hoodiehut.co.uk
 hero: './images/hoodie-hut.png'
+published: '2020-09-12'
+modified: '2025-09-19'
 ---
 
 <p>A garment printing company that produce printed hoodies for schools across the UK.</p>

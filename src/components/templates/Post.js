@@ -182,6 +182,10 @@ export default class Post extends Component {
           ? markdownRemark.frontmatter.hero.childImageSharp.gatsbyImageData
               .images.fallback.src
           : undefined,
+        datePublished: markdownRemark.frontmatter.published,
+        dateModified:
+          markdownRemark.frontmatter.modified ||
+          markdownRemark.frontmatter.published,
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Sheffield',
@@ -249,6 +253,12 @@ export default class Post extends Component {
             description={markdownRemark.frontmatter.description}
             keywords={[`${markdownRemark.frontmatter.title}`]}
             type="article"
+            image={
+              markdownRemark.frontmatter.hero
+                ? `https://sheffielders.org${markdownRemark.frontmatter.hero.childImageSharp.gatsbyImageData.images.fallback.src}`
+                : undefined
+            }
+            url={`https://sheffielders.org/collective/${markdownRemark.frontmatter.slug}/`}
           />
           <Header logofill={variables.white} menufill={variables.white} />
           <Main>
@@ -295,6 +305,8 @@ export const query = graphql`
         description
         sitelink
         slug
+        published
+        modified
         hero {
           childImageSharp {
             gatsbyImageData(

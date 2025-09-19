@@ -36,6 +36,12 @@ function SEO({
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            link={[
+              {
+                rel: 'canonical',
+                href: metaUrl,
+              },
+            ]}
             meta={[
               {
                 name: `description`,
@@ -189,6 +195,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        siteUrl
       }
     }
   }
