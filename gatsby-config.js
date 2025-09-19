@@ -37,7 +37,19 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/`,
+        createLinkInHead: true,
+        resolveSiteUrl: () => `https://sheffielders.org`,
+        serialize: ({ path }) => ({
+          url: path,
+          changefreq: `monthly`,
+          priority: 0.7,
+        }),
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
