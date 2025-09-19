@@ -9,7 +9,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-
   @media ${variables.md} {
     margin-left: 3vw;
     margin-right: 3vw;
@@ -66,20 +65,22 @@ const NavLinks = () => {
           <NavLink to="/collective/ben-partridge/">ben partridge</NavLink>
           <NavLink to="/collective/melissa-montague/">melissa montague</NavLink>
           <NavLink to="/collective/ryan-sheppeck/">ryan sheppeck</NavLink>
-          <NavLink to="/collective/katie-edge-mellor/">katie edge mellor</NavLink>
+          <NavLink to="/collective/katie-edge-mellor/">
+            katie edge mellor
+          </NavLink>
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Businesses</CategoryTitle>
           <NavLink to="/collective/hoodiehut/">hoodiehut</NavLink>
           <NavLink to="/collective/knots-massage/">knots massage</NavLink>
           <NavLink to="/collective/torso-clothing/">torso clothing</NavLink>
-          <NavLink to="/collective/inner-city-weddings/">inner city weddings</NavLink>
-          <NavLink to="/collective/tshirtexpert/">tshirtexpert</NavLink>
+          <NavLink to="/collective/inner-city-weddings/">
+            inner city weddings
+          </NavLink>
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Projects</CategoryTitle>
           <NavLink to="/collective/geometry-club/">geometry club</NavLink>
-          <NavLink to="/collective/icon-geography/">icongeography</NavLink>
           <NavLink to="/collective/chess-prints/">chess prints</NavLink>
         </CategoryBlock>
       </Container>
