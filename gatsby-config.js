@@ -1,9 +1,40 @@
 module.exports = {
   siteMetadata: {
     title: `Sheffielders`,
-    description: `A collective of businesses, projects and creatives who have one thing in common — we're all Sheffielders!`,
+    titleTemplate: `%s | Sheffielders`,
+    description: `A collective of businesses, projects and creatives who have one thing in common — we're all Sheffielders! Discover local talent, businesses, and innovative projects in Sheffield, South Yorkshire.`,
     author: `@davemullenjnr`,
     siteUrl: `https://sheffielders.org`,
+    image: `/icons/icon-512x512.png`,
+    twitterUsername: `@davemullenjnr`,
+    keywords: [
+      `Sheffield`,
+      `creative community`,
+      `local businesses`,
+      `South Yorkshire`,
+      `creative collective`,
+      `Sheffield entrepreneurs`,
+      `local directory`,
+      `business directory`,
+      `creative services`,
+      `Sheffield talent`,
+    ],
+    social: {
+      twitter: `https://twitter.com/davemullenjnr`,
+    },
+    organization: {
+      name: `Sheffielders`,
+      url: `https://sheffielders.org`,
+      logo: `https://sheffielders.org/icons/icon-512x512.png`,
+    },
+    location: {
+      addressLocality: `Sheffield`,
+      addressRegion: `South Yorkshire`,
+      addressCountry: `GB`,
+      postalCode: ``,
+      latitude: `53.3811`,
+      longitude: `-1.4701`,
+    },
   },
   plugins: [
     `gatsby-plugin-sitemap`,

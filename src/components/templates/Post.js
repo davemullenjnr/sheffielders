@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import './../../theme/base.css'
 import styled, { ThemeProvider } from 'styled-components'
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import SEO from '../core/Seo'
 import Head from '../core/Head'
@@ -171,28 +171,106 @@ export default class Post extends Component {
   render() {
     const { markdownRemark } = this.props.data
 
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
-      'author': 'Sheffielders',
-      'headline': markdownRemark.frontmatter.title,
-      'articleBody': markdownRemark.rawMarkdownBody,
-      'publisher': 'Sheffielders',
-    };
+    // Generate appropriate schema based on category
+    const getSchema = () => {
+      const baseSchema = {
+        '@context': 'https://schema.org',
+        name: markdownRemark.frontmatter.title,
+        description: markdownRemark.frontmatter.description,
+        url: markdownRemark.frontmatter.sitelink,
+        image: markdownRemark.frontmatter.hero
+          ? markdownRemark.frontmatter.hero.childImageSharp.gatsbyImageData
+              .images.fallback.src
+          : undefined,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Sheffield',
+          addressRegion: 'South Yorkshire',
+          addressCountry: 'GB',
+        },
+      }
+
+      switch (markdownRemark.frontmatter.category) {
+        case 'business':
+          return {
+            ...baseSchema,
+            '@type': 'LocalBusiness',
+            telephone: undefined, // Add if available in frontmatter
+            priceRange: '$$',
+            openingHours: undefined, // Add if available
+            paymentAccepted: ['Cash', 'Credit Card', 'Online Payment'],
+            currenciesAccepted: 'GBP',
+          }
+
+        case 'creative':
+          return {
+            ...baseSchema,
+            '@type': 'Person',
+            jobTitle: markdownRemark.frontmatter.title,
+            worksFor: {
+              '@type': 'Organization',
+              name: markdownRemark.frontmatter.title,
+            },
+            knowsAbout: ['Creative Services', 'Design', 'Art', 'Sheffield'],
+          }
+
+        case 'project':
+          return {
+            ...baseSchema,
+            '@type': 'CreativeWork',
+            creator: {
+              '@type': 'Person',
+              name: markdownRemark.frontmatter.title,
+            },
+            inLanguage: 'en-GB',
+            isPartOf: {
+              '@type': 'WebSite',
+              name: 'Sheffielders Collective',
+            },
+          }
+
+        default:
+          return {
+            ...baseSchema,
+            '@type': 'Thing',
+          }
+      }
+    }
+
+    const schema = getSchema()
 
     return (
       <Background black>
         <Scafolding>
           <Head />
-          <SEO schemaMarkup={schema} title={markdownRemark.frontmatter.title} description={markdownRemark.frontmatter.description} keywords={[`${markdownRemark.frontmatter.title}`]} type="article" />
+          <SEO
+            schemaMarkup={schema}
+            title={markdownRemark.frontmatter.title}
+            description={markdownRemark.frontmatter.description}
+            keywords={[`${markdownRemark.frontmatter.title}`]}
+            type="article"
+          />
           <Header logofill={variables.white} menufill={variables.white} />
           <Main>
             <Profile>
-              <HeroImage image={markdownRemark.frontmatter.hero.childImageSharp.gatsbyImageData} alt={markdownRemark.frontmatter.title} />
+              <HeroImage
+                image={
+                  markdownRemark.frontmatter.hero.childImageSharp
+                    .gatsbyImageData
+                }
+                alt={markdownRemark.frontmatter.title}
+              />
               <Category>{markdownRemark.frontmatter.category}</Category>
               <Title>{markdownRemark.frontmatter.title}</Title>
-              <Decription dangerouslySetInnerHTML={{ __html: markdownRemark.html}} />
-              <SiteLink href={markdownRemark.frontmatter.sitelink}>
+              <Decription
+                dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
+              />
+              <SiteLink
+                href={markdownRemark.frontmatter.sitelink}
+                target="_blank"
+                rel="dofollow noopener noreferrer"
+                aria-label={`Visit ${markdownRemark.frontmatter.title} website`}
+              >
                 {markdownRemark.frontmatter.sitelink}
               </SiteLink>
             </Profile>
@@ -202,26 +280,31 @@ export default class Post extends Component {
           </ThemeProvider>
         </Scafolding>
       </Background>
-    );
+    )
   }
 }
 
-export const query = graphql`query PostQuery($slug: String!) {
-  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-    html
-    rawMarkdownBody
-    frontmatter {
-      title
-      category
-      description
-      sitelink
-      slug
-      hero {
-        childImageSharp {
-          gatsbyImageData(width: 160, placeholder: DOMINANT_COLOR, layout: CONSTRAINED)
+export const query = graphql`
+  query PostQuery($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      html
+      rawMarkdownBody
+      frontmatter {
+        title
+        category
+        description
+        sitelink
+        slug
+        hero {
+          childImageSharp {
+            gatsbyImageData(
+              width: 160
+              placeholder: DOMINANT_COLOR
+              layout: CONSTRAINED
+            )
+          }
         }
       }
     }
   }
-}
 `

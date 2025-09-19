@@ -15,6 +15,7 @@ const DIRECTORY_QUERY = graphql`
             slug
             description
             category
+            sitelink
           }
         }
       }
@@ -134,9 +135,32 @@ const Directory = () => (
               <Category>{node.frontmatter.category}</Category>
               <Title>{node.frontmatter.title}</Title>
               <Decription>{node.frontmatter.description}</Decription>
-              <ListingLink to={`/collective/${node.frontmatter.slug}/`}>
-                View Profile
-              </ListingLink>
+              <div>
+                <ListingLink to={`/collective/${node.frontmatter.slug}/`}>
+                  View Profile
+                </ListingLink>
+                {node.frontmatter.sitelink && (
+                  <>
+                    <span
+                      style={{
+                        margin: '0 1rem',
+                        color: 'rgba(255,255,255,0.5)',
+                      }}
+                    >
+                      •
+                    </span>
+                    <ListingLink
+                      as="a"
+                      href={node.frontmatter.sitelink}
+                      target="_blank"
+                      rel="dofollow noopener noreferrer"
+                      aria-label={`Visit ${node.frontmatter.title} website`}
+                    >
+                      Visit Website
+                    </ListingLink>
+                  </>
+                )}
+              </div>
             </Listing>
           ))
         }
