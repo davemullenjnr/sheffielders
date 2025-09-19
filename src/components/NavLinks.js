@@ -71,7 +71,7 @@ const NavLinks = () => {
         </CategoryBlock>
         <CategoryBlock>
           <CategoryTitle>Businesses</CategoryTitle>
-          <NavLink to="/collective/hoodiehut/">hoodiehut</NavLink>
+          <NavLink to="/collective/hoodie-hut/">hoodiehut</NavLink>
           <NavLink to="/collective/knots-massage/">knots massage</NavLink>
           <NavLink to="/collective/torso-clothing/">torso clothing</NavLink>
           <NavLink to="/collective/inner-city-weddings/">
